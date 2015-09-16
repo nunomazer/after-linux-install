@@ -46,8 +46,11 @@ echo "deb http://repo.mongodb.org/apt/ubuntu trusty/mongodb-org/3.0 multiverse" 
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
+# Flash Player
+sudo -E apt-add-repository -y ppa:nilarimogard/webupd8
+
 #conky-manager
-sudo apt-add-repository -y ppa:teejee2008/ppa
+sudo -E apt-add-repository -y ppa:teejee2008/ppa
 
 # Mediabuntu codec packages
 sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
@@ -201,6 +204,9 @@ sudo apt-get install keepass2
 
 # Google Chrome Stable
 sudo apt-get install -y google-chrome-stable
+
+# Flash player
+sudo apt-get install -y freshplayerplugin
 
 # Gimp
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
