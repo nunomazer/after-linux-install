@@ -16,7 +16,7 @@ sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/
 # ubuntu tweak
 sudo add-apt-repository ppa:tualatrix/ppa
 
-# insync
+# insyncte
 wget -qO - https://d2t3ff60b2tol4.cloudfront.net/services@insynchq.com.gpg.key | sudo apt-key add -
 sudo sh -c 'echo "deb http://apt.insynchq.com/mint rafaela non-free contrib" >> /etc/apt/sources.list.d/insync.list'
 
@@ -144,7 +144,7 @@ wget https://github.com/jgm/pandoc/releases/download/1.15.0.6/pandoc-1.15.0.6-1-
 sudo dpkg -i pandoc-1.15.0.6-1-amd64.deb
 rm pandoc-1.15.0.6-1-amd64.deb
 
-sudo apt-get install -y texlive texlive-lang-portuguese lmodern
+sudo apt-get install -y texlive-full texlive-lang-portuguese lmodern
 
 # DBeaver
 cd ~/Downloads
