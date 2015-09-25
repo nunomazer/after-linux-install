@@ -144,7 +144,7 @@ wget https://github.com/jgm/pandoc/releases/download/1.15.0.6/pandoc-1.15.0.6-1-
 sudo dpkg -i pandoc-1.15.0.6-1-amd64.deb
 rm pandoc-1.15.0.6-1-amd64.deb
 
-sudo apt-get install -y texlive texlive-lang-portuguese
+sudo apt-get install -y texlive texlive-lang-portuguese lmodern
 
 # DBeaver
 cd ~/Downloads
