@@ -36,7 +36,9 @@ sudo -E add-apt-repository ppa:webupd8team/brackets
 sudo -E add-apt-repository ppa:ubuntu-mozilla-daily/firefox-aurora
 
 # node.js PPA
-sudo -E add-apt-repository ppa:chris-lea/node.js
+# sudo -E add-apt-repository ppa:chris-lea/node.js
+# curl --silent --location https://deb.nodesource.com/setup_0.12 | sudo bash -
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 
 #mongo
 sudo -E apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 7F0CEB10
