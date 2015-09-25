@@ -93,6 +93,7 @@ vagrant plugin install vagrant-proxyconf
 # Node.js node - recess - gulp - bower
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
+sudo npm install -g npm@latest
 sudo npm install -g recess
 sudo npm install -g gulp
 sudo npm install -g bower
