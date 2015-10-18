@@ -228,7 +228,7 @@ sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 sudo apt-get install -y shutter
 
 # Digikam
-sudo apt-get install -y digikam
+sudo apt-get install -y digikam kdelibs-bin kdelibs5-data kdelibs5-plugins
 
 # insync
 sudo apt-get install -y insync insync-nemo
