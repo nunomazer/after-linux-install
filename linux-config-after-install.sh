@@ -61,6 +61,9 @@ sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.me
 echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" | sudo tee /etc/apt/sources.list.d/vbox.list
 wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
 
+# Digikam
+sudo add-apt-repository ppa:philip5/extra
+
 sudo -E apt-get update
 
 ############################################
@@ -183,6 +186,9 @@ sudo -E dpkg -i robomongo-0.8.5-x86_64.deb
 
 # Unity lens Calculator utility
 #sudo apt-get install unity-lens-utilities/ unity-scope-calculator
+
+# Digikam
+sudo apt-get install digikam
 
 # Mediabuntu
 sudo apt-get install ubuntu-restricted-extras non-free-codecs libdvdcss2 faac faad ffmpeg ffmpeg2theora flac icedax id3v2 lame libflac++6 libjpeg-progs libmpeg3-1 mencoder mjpegtools mp3gain mpeg2dec mpeg3-utils mpegdemux mpg123 mpg321 regionset sox uudeview vorbis-tools x264 arj lha p7zip p7zip-full p7zip-rar rar unrar unace-nonfree vlc
