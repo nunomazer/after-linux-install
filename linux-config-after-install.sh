@@ -93,13 +93,14 @@ wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
 sudo dpkg -i vagrant_1.7.4_x86_64.deb 
 vagrant plugin install vagrant-proxyconf
 
-# Node.js node - recess - gulp - bower
+# Node.js node - recess - gulp - bower - electron
 sudo apt-get install -y nodejs
 sudo apt-get install -y npm
 sudo npm install -g npm@latest
 sudo npm install -g recess
 sudo npm install -g gulp
 sudo npm install -g bower
+sudo npm install -g electron-prebuilt
 
 # Ruby gems - sass compiler
 sudo apt-get install rubygems
