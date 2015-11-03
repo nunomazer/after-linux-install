@@ -225,8 +225,8 @@ sudo apt-get install -y freshplayerplugin
 # Gimp
 sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras
 
-# Shutter
-sudo apt-get install -y shutter
+# Shutter and edition extensions
+sudo apt-get install -y shutter libgoo-canvas-perl gnome-web-photo
 
 # Digikam
 sudo apt-get install -y digikam kdelibs-bin kdelibs5-data kdelibs5-plugins
