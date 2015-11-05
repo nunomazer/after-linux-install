@@ -173,8 +173,7 @@ rm dbeaver_3.4.5_amd64.deb
 sudo apt-get install -y git
 
 #Editors Atom & Brackets - Firefox dev edition
-# sudo apt-get install atom
-sudo apt-get install -y brackets firefox
+sudo apt-get install -y brackets atom firefox
 
 # Diff and merge visual tools
 sudo apt-get install -y diffuse meld
