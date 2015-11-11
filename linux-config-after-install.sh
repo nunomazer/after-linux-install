@@ -73,8 +73,8 @@ sudo -E apt-get update
 sudo apt-get install -y curl
 
 # Netbeans
-netbeans="8.0.2"
-wget http://download.netbeans.org/netbeans/8.0.2/final/bundles/netbeans-$netbeans-linux.sh
+netbeans="8.1"
+wget http://download.netbeans.org/netbeans/$netbeans/final/bundles/netbeans-$netbeans-linux.sh
 chmod +x ./netbeans-$netbeans-linux.sh
 sudo ./netbeans-$netbeans-linux.sh
 rm netbeans-$netbeans-linux.sh
