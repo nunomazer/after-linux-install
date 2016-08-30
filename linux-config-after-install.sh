@@ -230,6 +230,9 @@ sudo apt-get install -y shutter libgoo-canvas-perl gnome-web-photo
 # Digikam
 sudo apt-get install -y digikam kdelibs-bin kdelibs5-data kdelibs5-plugins
 
+# Phatch - image photo batch editor
+sudo apt-get install phatch
+
 # insync
 sudo apt-get install -y insync insync-nemo
 
