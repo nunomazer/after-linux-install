@@ -35,6 +35,7 @@ sudo apt-get purge lxc-docker
 apt-cache policy docker-engine
 sudo apt-get install linux-image-extra-$(uname -r) linux-image-extra-virtual
 sudo apt-get install docker-engine
+sudo usermod -aG docker $USER
 sudo service docker start
 sudo docker run hello-world
 sudo systemctl enable docker
