@@ -72,6 +72,12 @@ sudo -E apt-get update
 # curl
 sudo apt-get install -y curl
 
+# Oracle Java 7 & 8
+#sudo apt-get purge openjdk*
+sudo -E apt-get install -y oracle-java7-installer
+sudo -E apt-get install oracle-java7-set-default
+sudo apt-get install -y oracle-java8-installer
+
 # Netbeans
 netbeans="8.1"
 wget http://download.netbeans.org/netbeans/$netbeans/final/bundles/netbeans-$netbeans-linux.sh
@@ -79,11 +85,11 @@ chmod +x ./netbeans-$netbeans-linux.sh
 sudo ./netbeans-$netbeans-linux.sh
 rm netbeans-$netbeans-linux.sh
 
-# Oracle Java 7 & 8
-#sudo apt-get purge openjdk*
-sudo -E apt-get install -y oracle-java7-installer
-sudo -E apt-get install oracle-java7-set-default
-sudo apt-get install -y oracle-java8-installer
+# GitKraken
+#wget https://www.gitkraken.com/download/linux-deb
+wget https://release.gitkraken.com/linux/gitkraken-amd64.deb
+sudo dpkg -i gitkraken-amd64.deb
+rm gitkraken-amd64.deb
 
 # Virtualbox e Vagrant
 sudo -E apt-get -y install virtualbox-5.0 
