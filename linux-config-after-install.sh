@@ -39,6 +39,10 @@ sudo usermod -aG docker $USER
 sudo service docker start
 sudo docker run hello-world
 sudo systemctl enable docker
+# Docker-compose
+curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` >~/docker-compose
+$ chmod +x ~/docker-compose
+$ sudo mv ~/docker-compose /usr/local/bin/docker-compose
 
 
 # Atom Editor
