@@ -130,6 +130,12 @@ sudo npm install -g gulp
 sudo npm install -g bower
 sudo npm install -g electron-prebuilt
 
+# Slack desktop
+slack_v="2.1.2"
+wget https://downloads.slack-edge.com/linux_releases/slack-desktop-$slack_v-amd64.deb
+sudo dpkg -i slack-desktop-$slack_v-amd64.deb
+rm slack-desktop-$slack_v-amd64.deb
+
 # Ruby gems - sass compiler
 sudo apt-get install rubygems
 sudo gem install sass
