@@ -41,8 +41,8 @@ sudo docker run hello-world
 sudo systemctl enable docker
 # Docker-compose
 curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` >~/docker-compose
-$ chmod +x ~/docker-compose
-$ sudo mv ~/docker-compose /usr/local/bin/docker-compose
+chmod +x ~/docker-compose
+sudo mv ~/docker-compose /usr/local/bin/docker-compose
 # Docker-compose completition bash
 curl -L https://raw.githubusercontent.com/docker/compose/$(docker-compose version --short)/contrib/completion/bash/docker-compose > ~/docker-compose
 sudo mv ~/docker-compose  /etc/bash_completion.d/docker-compose
