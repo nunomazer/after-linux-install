@@ -2,6 +2,8 @@
 
 cd ~/Downloads
 
+UBUNTU_VERSION="xenial"
+
 # adding getdeb repository
 #sudo add-apt-repository 'deb http://archive.getdeb.net/ubuntu precise-getdeb apps'
 #sudo wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
@@ -79,10 +81,6 @@ sudo -E apt-add-repository -y ppa:teejee2008/ppa
 # Mediabuntu codec packages
 sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.medibuntu.org/sources.list.d/$(lsb_release -cs).list && sudo apt-get --quiet update && sudo apt-get --yes --quiet --allow-unauthenticated install medibuntu-keyring && sudo apt-get --quiet update
 
-# Virtualbox
-echo "deb http://download.virtualbox.org/virtualbox/debian trusty contrib" | sudo tee /etc/apt/sources.list.d/vbox.list
-wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
-
 # Digikam
 sudo add-apt-repository ppa:philip5/extra
 
@@ -114,11 +112,15 @@ sudo dpkg -i gitkraken-amd64.deb
 rm gitkraken-amd64.deb
 
 # Virtualbox e Vagrant
-sudo -E apt-get -y install virtualbox-5.0 
-sudo -E apt-get -y install linux-headers-generic build-essential dkms
+# Virtualbox
+echo "deb http://download.virtualbox.org/virtualbox/debian $UBUNTU_VERSION contrib" | sudo tee /etc/apt/sources.list.d/vbox.list
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+sudo apt-get update
+sudo apt-get -y install virtualbox-5.0 
+sudo apt-get -y install linux-headers-generic build-essential dkms
 
-wget https://dl.bintray.com/mitchellh/vagrant/vagrant_1.7.4_x86_64.deb
-sudo dpkg -i vagrant_1.7.4_x86_64.deb 
+sudo apt install vagrant
 vagrant plugin install vagrant-proxyconf
 
 # Node.js node - recess - gulp - bower - electron
