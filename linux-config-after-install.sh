@@ -84,6 +84,11 @@ sudo wget --output-document=/etc/apt/sources.list.d/medibuntu.list http://www.me
 # Digikam
 sudo add-apt-repository ppa:philip5/extra
 
+# Kdenlive
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
+sudo apt-get update
+sudo apt-get install kdenlive swh-plugins dvdauthor libkf5filemetadata-bin libmlt-data
+
 sudo -E apt-get update
 
 ############################################
