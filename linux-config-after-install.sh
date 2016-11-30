@@ -271,6 +271,11 @@ sudo apt-get install -y digikam kdelibs-bin kdelibs5-data kdelibs5-plugins
 # Phatch - image photo batch editor
 sudo apt-get install phatch
 
+# Photivo photo RAW editor
+sudo add-apt-repository ppa:dhor/myway
+sudo apt-get update
+sudo apt-get install photivo
+
 # insync
 sudo apt-get install -y insync insync-nemo
 
