@@ -89,6 +89,12 @@ sudo add-apt-repository ppa:kdenlive/kdenlive-stable
 sudo apt-get update
 sudo apt-get install kdenlive swh-plugins dvdauthor libkf5filemetadata-bin libmlt-data
 
+# Avidemux
+sudo sh -c 'echo "deb http://archive.getdeb.net/ubuntu xenial-getdeb apps" >> /etc/apt/sources.list'
+wget -q -O- http://archive.getdeb.net/getdeb-archive.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install avidemux2.6
+
 sudo -E apt-get update
 
 ############################################
