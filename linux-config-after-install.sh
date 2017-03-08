@@ -247,8 +247,7 @@ sudo apt-get install ubuntu-tweak -y
 sudo apt-get install compizconfig-settings-manager
 
 # installing conky
-sudo apt-get install conky-all lm-sensors hddtemp
-sudo apt-get install conky-manager
+sudo apt-get install conky-all lm-sensors hddtemp conky-manager apcupsd
 
 # installing dropbox
 sudo apt-get install dropbox
@@ -284,6 +283,13 @@ sudo apt-get install photivo
 
 # insync
 sudo apt-get install -y insync insync-nemo
+
+# SPOTIFY
+# 1. Add the Spotify repository signing key to be able to verify downloaded packages
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt-get update
+sudo apt-get install spotify-client
 
 # To compile sources
 sudo apt-get install -y build-essential checkinstall cdbs devscripts dh-make fakeroot libxml-parser-perl check avahi-daemon -y
