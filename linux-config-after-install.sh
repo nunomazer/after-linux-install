@@ -199,9 +199,9 @@ sudo apt-get install -y texlive-full texlive-lang-portuguese lmodern
 
 # DBeaver
 cd ~/Downloads
-wget http://dbeaver.jkiss.org/files/dbeaver_3.4.5_amd64.deb
-sudo dpkg -i dbeaver_3.4.5_amd64.deb
-rm dbeaver_3.4.5_amd64.deb
+wget http://dbeaver.jkiss.org/files/dbeaver-ce_latest_amd64.deb
+sudo dpkg -i dbeaver-ce_latest_amd64.deb
+rm dbeaver-ce_latest_amd64.deb
 #wget http://dbeaver.jkiss.org/files/driver-pack-2.1.0.zip
 #sudo unzip driver-pack-2.1.0.zip -d /usr/share/dbeaver/
 #rm driver-pack-2.1.0.zip
