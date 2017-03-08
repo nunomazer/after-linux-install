@@ -13,6 +13,21 @@ UBUNTU_VERSION="xenial"
 
 # ZSH
 sudo apt-get install zsh
+sudo chsh -s $(which zsh)
+# LOGOUT SESSION
+sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+mkdir ~/.oh-my-zsh/custom/themes
+cd ~/.oh-my-zsh/custom/themes
+wget http://raw.github.com/zakaziko99/agnosterzak-ohmyzsh-theme/master/agnosterzak.zsh-theme
+cd ~
+nano ~/.zshrc
+ZSH_THEME="agnoster"
+DEFAULT_USER="nunomazer"
+plugin=(git laravel5)
+# ZSH_THEME="agnosterzak"
+# you might need to install a special Powerline font on your console's host for this to work
+# see https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
+
 
 # adding dropbox repository
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
