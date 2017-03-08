@@ -265,8 +265,8 @@ sudo apt-get install -y google-chrome-stable
 # Flash player
 sudo apt-get install -y freshplayerplugin
 
-# Gimp
-sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras icc-profiles gimp-gmic libimage-exiftool-perl
+# Gimp & Inkscape
+sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras icc-profiles gimp-gmic libimage-exiftool-perl inkscape pstoedit libsvg-perl python-uniconvertor libwmf-bin transfig xfig gsfonts-x11 xfig-libs
 
 # Shutter and edition extensions
 sudo apt-get install -y shutter libgoo-canvas-perl gnome-web-photo
