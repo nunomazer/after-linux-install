@@ -272,7 +272,7 @@ sudo apt-get install -y gimp gimp-data gimp-plugin-registry gimp-data-extras icc
 sudo apt-get install -y shutter libgoo-canvas-perl gnome-web-photo
 
 # Digikam
-sudo apt-get install -y digikam kdelibs-bin kdelibs5-data kdelibs5-plugins
+sudo apt-get install -y digikam5 kdelibs-bin kdelibs5-data kdelibs5-plugins kipi-plugins5 ffmpegthumbs showfoto5 icoutils hugin enblend enfuse 
 
 # Phatch - image photo batch editor
 sudo apt-get install phatch
