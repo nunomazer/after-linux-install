@@ -11,6 +11,9 @@ UBUNTU_VERSION="xenial"
 # adding classic menu repository
 #sudo add-apt-repository ppa:diesch/testing
 
+# ZSH
+sudo apt-get install zsh
+
 # adding dropbox repository
 sudo apt-key adv --keyserver pgp.mit.edu --recv-keys 5044912E
 sudo sh -c 'echo "deb http://linux.dropbox.com/ubuntu/ trusty main" >> /etc/apt/sources.list.d/dropbox.list'
