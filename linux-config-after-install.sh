@@ -273,8 +273,8 @@ sudo apt-get install dropbox
 # configuring watch users to dropbox
 echo 100000 | sudo tee /proc/sys/fs/inotify/max_user_watches
 
-# Keepass2
-sudo apt-get install keepass2
+# KeepassX
+sudo apt-get install keepassx
 
 # Google Chrome Stable
 sudo apt-get install -y google-chrome-stable
